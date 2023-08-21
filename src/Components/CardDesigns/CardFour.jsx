@@ -7,14 +7,14 @@ const CardFour = () => {
     <Center>
       <div className="card p-4 shadow-sm text-dark mt-4" style={{width:"350px",backgroundImage:`url(${overImg})`,border:'none'}}>
         <div className="card-body p-0">
-          <h4 className="card-title" style={{color:"darkblue"}}>
+          <h4 className="card-title" style={{color:"darkblue",fontFamily:'Poppins',fontWeight:'lighter 300'}}>
             Beautiful UI Components
           </h4>
-          <p className='card-text'>Indulging in a warm cup of coffee is like a soothing embrace for the mind, gently unraveling tension and infusing tranquility with every sip. Its rich aroma and comforting taste create a brief oasis of relaxation amidst the bustling rhythms</p>
+          <p className='card-text' style={{fontFamily:"Poppins",fontSize:"16px",fontWeight:'Extralight 200',color:'black'}}>Indulging in a warm cup of coffee is like a soothing embrace for the mind, gently unraveling tension and infusing tranquility with every sip. Its rich aroma and comforting taste create a brief oasis of relaxation amidst the bustling rhythms</p>
         </div>
         <Divider color='red.500' variant='solid'/>
         <div className="card-footers">
-          <p className='fs-6 fw-bold text-end'>3 mins ago</p>
+          <p className='fs-6 fw-bold text-end' style={{color:"darkblue"}}>3 mins ago</p>
         </div>
       </div>
     </Center>

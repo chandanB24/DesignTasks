@@ -27,7 +27,7 @@ const CardTwo = () => {
                 <h6>John Abhraham</h6>
               </div>
              < div className="last-updated">
-                <p>Updated:3 mins ago</p>
+                <p >Updated:3 mins ago</p>
               </div>
             </div>
           </div>
