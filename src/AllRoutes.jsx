@@ -4,6 +4,8 @@ import DraggableComponent from './Components/DraggableCard/DraggableComponent'
 import HighlightingCard from './Components/HighlightingCard/HighlightingCard'
 import Cards from './Components/CardDesigns/Cards'
 import PageLoading from './Components/PageLoading/PageLoading'
+import TempApp from './Components/TempApp/TempApp'
+
 
 const AllRoutes = () => {
   return (
@@ -12,6 +14,7 @@ const AllRoutes = () => {
         <Route path='/highlight' element={<HighlightingCard/>}/>
         <Route path='/cards' element={<Cards/>}/>
         <Route path='/pageloading' element={<PageLoading/>}/>
+        <Route path='/weather' element={<TempApp/>}/>
     </Routes>
   )
 }

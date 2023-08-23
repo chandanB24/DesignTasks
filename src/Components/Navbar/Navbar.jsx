@@ -27,6 +27,9 @@ const Navbar = () => {
           <Link className="nav-link active" aria-current="page" to='/pageloading'>PageLoading</Link>
         </li>
         <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to='/weather'>Weather</Link>
+        </li>
+        <li className="nav-item">
           <small className="nav-link active" aria-current="page">{isAuthenticated && user.name}</small>
         </li>
       </ul>

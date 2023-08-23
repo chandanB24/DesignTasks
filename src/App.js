@@ -5,8 +5,11 @@ import Navbar from './Components/Navbar/Navbar';
 import { BrowserRouter } from 'react-router-dom';
 import AllRoutes from './AllRoutes';
 import { ChakraProvider } from '@chakra-ui/react';
+import 'aos/dist/aos.css'
+
 
 const App = () => {
+
   return (
     <ChakraProvider>
         <BrowserRouter>

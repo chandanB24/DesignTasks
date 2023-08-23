@@ -1,8 +1,13 @@
 import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities';
-import React from 'react'
+import React, { useEffect } from 'react'
+import Aos from 'aos';
 
 const CardComponent = ({id,title,content}) => {
+
+  useEffect(()=>{
+    Aos.init({duration:1000})
+  },[]);
 
     const {setNodeRef,attributes,listeners,transition,transform,isDragging} = useSortable({id:id});
 
@@ -13,8 +18,8 @@ const CardComponent = ({id,title,content}) => {
     }
 
   return (
-    <div className="col" ref={setNodeRef} {...attributes} {...listeners} style={style}>
-    <div className={`card  ${isDragging?"bg-success text-white":"bg-light text-dark"} mb-3`}>
+    <div className="col" ref={setNodeRef} {...attributes} {...listeners} style={style} data-aos="fade-up">
+    <div className={`card  ${isDragging?"bg-success text-white":"bg-light text-dark"} mb-3`} >
     <div className="card-header">Draggable cards</div>
     <div className="card-body">
       <h5 className="card-title">{title}</h5>
